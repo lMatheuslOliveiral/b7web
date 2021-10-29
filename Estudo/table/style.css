@@ -1,0 +1,19 @@
+table{
+  width: 700px;
+}
+
+thead{
+  background-color: darkgrey;
+}
+
+tbody tr:hover{
+  background-color: rgba(238, 238, 238, 0.726);
+}
+
+tbody tr:nth-child(even){
+  background-color: rgba(238, 238, 238, 0.726);
+}
+
+th, td{
+  padding: 5px;
+}
