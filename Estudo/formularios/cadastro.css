@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+}
+
+
+label{
+  display: block;
+  margin-top: 20px;
+}
+
+input[type=text],textarea, select{
+  width: 300px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+textarea{
+  height: 100px;
+  padding: 5px;
+  font-size: 8px;
+  resize: none;
+}

@@ -4,92 +4,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cadastro.css">
   <title>Test</title>
 </head>
 <body>
   
   <h1>Página de Testes</h1>
-<!--Estou testando todos os tipos de input que o professor ensinou-->
+
   <h2>Área de Cadastro</h2>
-  <form action="login.html" method="GET">
   
-    <input type="text">
-<br>
-    <input type="password">
-<br>
-    <input type="checkbox">
-<br>
-    <input type="radio" name="sex">
-    <input type="radio" name="sex">
-<br>
-    <input type="email" >
-<br>
-    <input type="text" name="user" >
-    <input type="submit" >
-<br>
-    <input type="color">
-<br>
-    <input type="date">
-<br>
-    <input type="month"> 
-<br>
-    <input type="datetime-local">
-<br>
-    <input type="number">
-<br>
-    <input type="range">
-<br>
-    <input type="search">
-<br>
-    <input type="tel">
-<br>
-    <input type="time">
-<br>
-    <input type="text">
-<br>
-    <input type="url">
-<br>
-    <input type="week">
+  <label>
+    Nome completo:<br>
+    <input type="text" name="user">
+  </label>
 
-  </form>
+  <label>
+    Descrição<br>
+    <textarea name="descricao"></textarea>
+  </label>
 
-<h2>Teste da tag select</h2>
-
-  <br>
-<!--Exemplo da tag select-->
-
-  <form action="login.html" method="GET">
-
-    <select name="order" size="2" multiple>
-      
-      <option value="bestseller">Mais vendidos</option>
-      <option value="lasts">Recentes</option>
-
+  <label>
+    <select name="categorias">
+      <option value="1">Categoria 1</option>
+      <option value="2">Categoria 2</option>
+      <option value="3">Categoria 3</option>
+      <option value="4">Categoria 4</option>
+      <option value="5">Categoria 5</option>
     </select>
+  </label>
 
-  </form>
+  <label>
+    <input type="checkbox">Eu li e aceito todos os <a href="#">termos de uso</a>.
+  </label>
 
-<br>
-
-<h3>TEXTAREA</h3>
-<form action="login.html" method="GET">
-
-  <textarea name="descricao"></textarea>
-
-</form>
-
-<br><br>
-
-<h3>Test Label</h3>
-
-<label>
-  <input type="checkbox">
-  Eu li e aceito os termos de uso.
-</label>
-<br><br>
-<!--Também existe essa outra forma de utilizar o label-->
-<label for="user">Nome de usuário:</label>
-<input type="text" name="name" id="user">
+  <label>
+    <button>
+      Fazer Cadastro
+    </button>
+  </label>
 
 </body>
 </html>
