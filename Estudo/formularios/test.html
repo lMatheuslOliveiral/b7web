@@ -13,35 +13,47 @@
 
   <h2>Área de Cadastro</h2>
   
-  <label>
-    Nome completo:<br>
-    <input type="text" name="user">
-  </label>
+  <form method="POST" action="me-leia">
 
-  <label>
-    Descrição<br>
-    <textarea name="descricao"></textarea>
-  </label>
+        <label>
+          Nome completo:<br>
+          <input type="text" name="user" required>
+        </label>
 
-  <label>
-    <select name="categorias">
-      <option value="1">Categoria 1</option>
-      <option value="2">Categoria 2</option>
-      <option value="3">Categoria 3</option>
-      <option value="4">Categoria 4</option>
-      <option value="5">Categoria 5</option>
-    </select>
-  </label>
+        <label>
+          E-mail:<br>
+          <input type="text" name="user" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="endereço de e-mail" required>
+        </label>
 
-  <label>
-    <input type="checkbox">Eu li e aceito todos os <a href="#">termos de uso</a>.
-  </label>
+        <label>
+          Foto:<br>
+          <input type="file" name="photo" accept="image/*">
+        </label>
 
-  <label>
-    <button>
-      Fazer Cadastro
-    </button>
-  </label>
+        <label>
+          Descrição<br>
+          <textarea name="descricao"></textarea>
+        </label>
+
+        <label>
+          <select name="categorias">
+            <option value="1">Categoria 1</option>
+            <option value="2">Categoria 2</option>
+            <option value="3">Categoria 3</option>
+            <option value="4">Categoria 4</option>
+            <option value="5">Categoria 5</option>
+          </select>
+        </label>
+        
+        <label>
+          <input type="checkbox">Eu li e aceito todos os <a href="#">termos de uso</a>.
+        </label>
+
+        <label>
+          <input type="submit" value="Cadastrar" >
+        </label>
+
+  </form>
 
 </body>
 </html>
