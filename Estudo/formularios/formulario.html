@@ -4,24 +4,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container{
+      width: 300px;
+      background-color: aliceblue;
+    }
+
+  </style>
   <title>Praticando</title>
 </head>
 <body>
-  <form action="" method="GET">
 
-    <label>
-      Nome 
-      <input type="dados.html" name="nome">
-    </label>
+<div class="container">
 
-    <label>
-      Sobrenome
-      <input type="dados.html" name="sobrenome">
-    </label>
-    
+    <form action="dados.html" method="GET">
+      <fieldset>
+          <legend>Área de Cadastro</legend>
+              <label>
+                Nome:<br>
+                <input type="text" name="nome">
+              </label>
+    <br>
+              <label>
+                Sobrenome:<br>
+                <input type="text" name="sobrenome">
+              </label>
+    <br>
+              <label>
+                E-mail:<br>
+                <input type="email" name="email">
+              </label>
+    <br>
+              <label>
+                Senha:<br>
+                <input type="password" name="senha">
+              </label>
+    <br>
+              <label>
+                Idade:<br>
+                <input type="date" name="idade">
+              </label>
+      </fieldset>
+    </form>
 
-
-  </form>
+</div>
   
 </body>
 </html>
